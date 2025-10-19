@@ -1,0 +1,12 @@
+if elif (practise and revision pending) 2/10
+for/ while loop ( praactise needed) 3/10
+match case (learning practise needed ) 0.5/10
+list, tuple , dictionary ( practise neede ) 3/10
+string, int , float  5/10
+input, input conversion 4/10
+
+day 1
+
+office -> 5:30 - 6:30
+non office -> 9-10
+sat, sunday -> 4-6

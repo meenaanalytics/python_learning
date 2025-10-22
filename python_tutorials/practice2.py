@@ -39,7 +39,7 @@ students = {
 
 colors = ["red" , "green" , "pink" , "orange" , "blue" , "black"]
  
-for  i in color:
-    print(color)
+for  key in colors:
+    print(key)
 
 

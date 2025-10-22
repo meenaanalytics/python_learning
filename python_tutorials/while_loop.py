@@ -18,18 +18,10 @@
 
 '''Counter using while loop'''
 
-# count = 0
-
-# while count <= 5:    # 6 <= 5 False
-#     print('Before > ', count)
-#     count = count + 1  #  1  2  3  4 
-#     print('After > ', count)
-
-#     print('----------------')
 
 # print('loop ended')
 
-'''Guess the number'''
+# '''Guess the number'''
 
 # secret = 8
 # guess = 5
@@ -54,9 +46,9 @@
 #     print(f'Current bills is : {total}')
     
 
-# print(f'Your total bills is : {total}')
+#(print(f'Your total bills is : {total}')
 
-"""print fruit using while loop"""
+# """print fruit using while loop"""
 
 # for fruit in fruits:
 #     print(fruit)
@@ -64,10 +56,10 @@
 # print(fruits[1])
 # print(len(fruits))
 
-fruits = ['apple', 'banana', 'graphs', 'mango', 'orange', 'litchi']
-           # 0.       1.        2.         3        4.        5
-index = 0
+# fruits = ['apple', 'banana', 'graphs', 'mango', 'orange', 'litchi']
+#            # 0.       1.        2.         3        4.        5
+# index = 0
 
-while index < len(fruits):
-    print(fruits[index])
-    index = index + 1
+# while index < len(fruits):
+#     print(fruits[index])
+#     index = index + 1

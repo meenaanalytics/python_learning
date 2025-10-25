@@ -49,15 +49,15 @@
 
 # brand8_color = 'Red'
 # BRAND8_COLOR = 'green'
-#7brand = 'Audi'.  # ❌ wrong
+# 7brand = 'Audi'.  # ❌ wrong
 
 # print_print = 'vishal'
 
 # sahil_class_10th_marks = 80
 # kondapur_bike_showroom_count = 70 #snake case
-KondapurBikeShowroomCount = 70  #pascal case / camel case
+# KondapurBikeShowroomCount = 70  #pascal case / camel case
 
-print(KondapurBikeShowroomCount)
+# print(KondapurBikeShowroomCount)
 
 
 

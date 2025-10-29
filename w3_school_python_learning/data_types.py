@@ -20,11 +20,11 @@
 
 # list , tuple, dict, 
 
- my_set = {'Vishal', 'Chandigarh', 'Guggu', 'holiday', 30, 7000000} #indexing is not fixed automatically decided
+my_set = {'Vishal', 'Chandigarh', 'Guggu', 'holiday', 30, 7000000} #indexing is not fixed automatically decided
 
- print(my_set)
- my_set.add('Trip')
- print(my_set)
+print(my_set)
+my_set.add('Trip')
+print(my_set)
 
 #'''frozen_set'''
 

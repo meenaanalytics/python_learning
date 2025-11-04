@@ -96,3 +96,90 @@
 # print("banana" in  fruits)
 
 # print("pineapple" not in fruits)
+
+
+'''Assignment Operator'''
+
+
+'''1..(+)'''
+
+y = 50
+y = y + 50
+
+print(y)
+
+
+'''2..(-)'''
+
+z = 50
+z = z - 50
+
+print(z)
+
+
+'''3..(%)'''
+
+x = 60
+x = x % 60
+
+print(x )
+
+'''4..(*)'''
+
+
+x = 20
+x = x * 20
+
+print(x)
+
+'''5..(=)'''
+
+a = 20
+a = a = 20
+
+print(a)
+
+
+'''6..//'''
+
+v = 20
+v = v // 20
+
+print(v)
+
+
+'''7..(**)'''
+
+v = 30
+v = v ** 30
+
+print(v)
+
+
+'''8..(/)'''
+
+v = 20
+v = v / 20
+
+print(v)
+
+
+
+
+"""pain in silence"""
+
+# ((((😔🥹i tired to act stronger...
+
+# MY soul is hurt..
+
+# my mind is lost
+
+# i am going to through the worst phase of my life 😔..
+
+# AND the most painful thing is,
+# 😔i can,t tell anyone..
+# whats the actually going inside me...😔🥹))))
+
+
+
+# ❤️ from dudu

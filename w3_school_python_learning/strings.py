@@ -1,67 +1,66 @@
-'''String slicing...'''
+'''string slicing'''
 
-# b = "Hell/zo, World! asdflkj vishalllXd" # => ['H', 'e', 'l', ... ,  ',' ,' ', ]
+# b = "hello/zo, world! hfereeerofjerjj fjflkejioewhu vishallllx"     #['h' , 'e' , 'l' , ... , ',' , ] 
 
-# print(b[8:12]) # slicing from inbetween
-# print(b[7:-1]) # slice from perticular index to last - 1
-# print(b[:5]).  # slice from start to perticular index
-# print(b[2:]).  # slice from perticular index to last (included )
+# print(b[8:12])      # slicing from inbetween
+# print(b[7:-1])      # slicing from practicular index to last -1 
+# print(b[:5])        # slicing from start to perticular index
+# print(b[2:])        # slicing from practicular index to last(included)
 
-# print(b[-5:-2]) #negative selecting
+# print(b[-5:-2])     # negative selecting
 
-# fruit = ['apple', 'orange', 'graphs', 'watermelon']
 
-# print(fruit[0:3])
+# fruits = ['apple' , 'orange' , 'grapes' , 'watermelon']
 
-'''String modification'''
+# print(fruits[2:3])
+# print(fruits[0:3])
 
-# movie_name = 'dilwale dulhaniya le jaenge!' 
 
-# print(movie_name.upper()) # convert string to upper case
-# print(movie_name.lower()) # convert string to lower case 
-# print(movie_name.strip()). # cut space from start and the end (ex: '             dilwale dulhaniya le jaenge!     ')
-# print(movie_name.replace('d', 'O')) # to replace single letter
-# print(movie_name.replace('dilwale', 'chijjjiwale')) # to replace the word
-# print(movie_name.replace('dilwale dulhaniya le jaenge', 'Dabangg')) # to replace the word
+'''string modification'''
 
-# today_schedule = 'Going for a walk, eat breakfast, go to office, do your job'
+movie_name = 'dilwale dulhaniya le jayege!'
 
-# print(today_schedule.split('o')) # convert the string to a list 
+# print(movie_name.upper())     #convert string to upper case
+# print(movie_name.lower())     #convert string to lower case
+# print(movie_name.strip())     #cut space from start and the end (ex:       dilwale dulhaniya le jayege!'    )
+# print(movie_name.replace('d' , 'v'))      #to replace single letter
+# print(movie_name.replace('dilwale' , 'love'))     #to replace the word
+# print(movie_name.replace('dilwale dulhaniya le jayege!' , 'am so lonely broken angel'))     
+
+# today_schedul = 'going for a walk, eat breakfast, go to office, do your job'
+
+# print(today_schedul.split('o'))
 
 '''string concatination'''
 
-# var = 'Hello'
-# var1 = 'World!'
+# var = 'hello'
+# var1 = 'world'
 
 # var4 = var + ' ' + var1 + 'vishal'
 
 # print(var4)
 
+'''format string'''
 
-'''format string (f string)'''
 
-# age = 36
-# bill = 500
-#This will produce an error:
-# txt = "My name is John, I am " + age ❌ wrong !!!
+age = 36
+bill = 500
+# This will produce an error:
+# txt = 'my name is jhon, i am ' + age ❌ wrong!!
 
-# txt = f"My name is John, my bill is {bill:.2f}"
-# txt = f"My name is John, my bill is {bill * 10}"
+# txt = f'my name is jhon, my bill is  {bill:.2f}'
+# txt = f'my name is jhon, my bill is  {bill * 10}'
 
-# print(f"{txt} {age}")
+# print(f'{txt} {age}')
 # print(txt)
 
 '''escape character'''
 
-# txt = "Hello i'm going for a movie today named : "Bahubali"". ❌ wrong!! gives you error
-# txt = "Hello \r i'm \t going  \f for a\b movie \\ today \n named : \"Bahubali\"" # ✅ CORRECT
+# txt = "hello i am going for a movie today named : "bahubali"".❌ wrong!! gives you error
+txt = "hello \bi am\t going \\for a \rmovie \ftoday \n named : \"bahubali\"" #✅ correct
 
-# print(txt)
+print(txt)
 
-'''Home work!!!'''
 
-# capitalize()	Converts the first character to upper case
-# casefold()	Converts string into lower case
-# center()	Returns a centered string
-# count()	Returns the number of times a specified value occurs in a string
-# encode()	Returns an encoded version of the string
+
+

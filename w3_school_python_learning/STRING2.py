@@ -69,11 +69,11 @@ bill = 500
 
 '''1..Converts the first character to upper ca'''
 
-# txt = "hello, and welcome to my world."
-#
-# x = txt.capitalize()
+txt = "hello, and welcome to my world."
 
-# print (x)
+x = txt.capitalize()
+
+print (x)
 
 
 '''2..onverts string into lower case'''

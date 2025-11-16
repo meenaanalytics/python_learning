@@ -212,3 +212,106 @@
 
 
 'bla bla bla !!!!'
+
+
+'''Remove Items'''
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964,
+#   'color': 'Red'
+# }
+
+# thisdict.pop('brand')  # Remove mentioned Key:value
+# thisdict.popitem()  # remove last inserted Key:value
+# del thisdict['color']
+# del thisdict
+
+# thisdict.clear()  #empty the dictionary
+
+# print(thisdict)
+
+'''Loop over dictionary'''
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  'color': 'Red'
+}
+
+# print(thisdict['brand'])
+
+# for key_value in thisdict:
+#     print(thisdict[key_value])
+
+# x = 'brand'
+
+# print(thisdict[x])
+
+# for key in thisdict:
+#     print(f'{key} : {thisdict[key]}')
+
+
+# for value in thisdict.values():
+#     print(value)
+
+# print(thisdict.keys())
+
+# for key in thisdict.keys():
+#   print(key)
+
+# key_value_pair = thisdict.items()
+
+# for key,value in key_value_pair:
+#     print(f'{key}: {value}')
+
+
+'''copy of dictionary'''
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# mydict = thisdict.copy()
+# mydict['brand'] = 'Tata'
+
+# print(mydict)
+# print(thisdict)
+
+# mydict = dict(thisdict)
+# print(mydict)
+
+'''Nested Dictionary'''
+
+# child1 = {
+#   "name" : "Ram",
+#   "year" : 2004
+# }
+# child2 = {
+#   "name" : "Sham",
+#   "year" : 2007
+# }
+# child3 = {
+#   "name" : "Ghanshyam",
+#   "year" : 2011
+# }
+
+# myfamily = {
+#   "child1" : child1,
+#   "child2" : child2,
+#   "child3" : child3
+# }
+
+# print(myfamily['child2']['name'])
+# print(myfamily.values())
+
+# for key,value in myfamily.items():
+#     # print(f'{key}: {value}')
+#     for inner_key, inner_value in value.items():
+#         print(f'{inner_key}: {inner_value}')
+    
+#     print('--------------------------------')
+

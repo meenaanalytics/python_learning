@@ -99,6 +99,79 @@ tuple3 = (True , False , False)
 '''delete tuple'''
 
 thistuple = ("apple" , "mango" , "cherry" , "kiwi" , "melon")
-del thistuple
+del thistuple # tuple is deleted and its no longer available now onwards
 
 print(thistuple)
+
+'''unpack tuple item'''
+
+# fruits = ("mango" , "cherry" , "kiwi" , "lichi")
+
+# (x , y , *z) = fruits
+
+# print(x)
+# print(y)
+# print(z)
+
+# fruits = ("apple", "banana", "cherry", "strawerry", "raspberry")
+
+# (x , y , *z) = fruits   #use (*) to store rest of the item🚨
+
+# print(x)
+# print(y)
+# print(z)
+
+# fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+
+# (green , *tropic , red) = fruits
+
+# print(green)
+# print(tropic)
+# print(red)
+
+'''loop in tuple'''
+
+# thistuple = ("mango", "cherry", "grapes", "guava")
+
+# for v in thistuple:
+    # print(v)
+
+# thistuple = ("mango", "cherry", "grapes", "berry")
+
+# for i in range(len(thistuple)):
+#     print(thistuple[i])
+
+
+# thistuple = ("cherry", "mango", "apple", "lichi")
+# i = 0
+
+# while i < len(thistuple):
+#     print(thistuple[i])
+#     i = i + 3
+
+
+'''jion tuple'''
+
+# tuple1 = ("a", "b", "c", "d")
+# tuple2 = (1 , 2 , 3 , 4)
+
+# tuple3 = tuple1 + tuple2
+# print(tuple3)
+
+'''multiple tuple'''
+
+# fruits = ("apple", "mango", "cherry", "lichi")
+# mytuple = fruits * 5
+
+# print(mytuple)
+
+
+'''tuple method'''
+
+#count
+fruits = ("mango", "cherry", "apple", "lichi", "apple")
+
+# print(fruits.count('apple'))
+
+#indexing
+print(fruits.index('lichi'))

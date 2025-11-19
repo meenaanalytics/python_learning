@@ -11,28 +11,31 @@ These conditions can be used in several ways, most commonly in "if statements" a
 An "if statement" is written by using the if keyword.'''
 
 # a = 33
-# b = 200
+# b = 400
 
 # if b > a:
-#   print("b is greater than a")
+#     print("b is greater than a")
 
 
 # number = 15
-# if number > 0:
-#   print("The number is positive")
+# if number >0:
+#     print("the number is positive")
 
-'''❌ Wrong indent , it will give error , ensure Indentation '''
+
+'''❌ Wrong indent , it will give error , ensure Indentation'''
+
 # a = 33
 # b = 200
 # if b > a:
-# print("b is greater than a") # you will get an error
+# print("b is greater than a")  # you will get an error
+
 
 
 # age = 20
 # if age >= 18:
-#   print("You are an adult")
-#   print("You can vote")
-#   print("You have full legal rights")
+#     print("you are an adult")
+#     print("you can vote")
+#     print("you have full legal rights")
 
 
 # is_logged_in = True
@@ -40,11 +43,15 @@ An "if statement" is written by using the if keyword.'''
 # if is_logged_in:
 #   print("Welcome back!")
 
+
+
 '''The Elif Keyword
 
 The elif keyword is Python's way of saying "if the previous conditions were not true, then try this condition".
 
-The elif keyword allows you to check multiple expressions for True and execute a block of code as soon as one of the conditions evaluates to True.'''
+The elif keyword allows you to check multiple expressions for True and execute a block of code as soon as one of the conditions evaluates to True.
+'''
+
 
 # a = 33
 # b = 33
@@ -54,10 +61,12 @@ The elif keyword allows you to check multiple expressions for True and execute a
 #   print("a and b are equal")
 
 
+
 '''
 How Elif Works:
 
 When you use elif, Python evaluates the conditions from top to bottom. As soon as it finds a condition that is true, it executes that block and skips all remaining conditions.'''
+
 
 # score = int(input('Enter your Score: '))
 
@@ -72,12 +81,14 @@ When you use elif, Python evaluates the conditions from top to bottom. As soon a
 # else:
 #   print('Tata bye bye khatam gya!!!')
 
+
 '''
 When to Use Elif:
 
 Use elif when you have multiple mutually exclusive conditions to check. This is more efficient than using multiple separate if statements because Python stops checking once it finds a true condition.
 
 '''
+
 
 # day = int(input('Enter Day number : '))
 
@@ -96,12 +107,15 @@ Use elif when you have multiple mutually exclusive conditions to check. This is 
 # elif day == 7:
 #   print("Sunday")
 
+
+
 '''
 The Else Keyword:
 
 The else keyword catches anything which isn't caught by the preceding conditions.
 
 The else statement is executed when the if condition (and any elif conditions) evaluate to False.'''
+
 
 # day = int(input('Enter Day number : '))
 
@@ -133,44 +147,48 @@ The else statement is executed when the if condition (and any elif conditions) e
 #   print("Error: Username cannot be empty")
 
 
+
+
 '''
 Short Hand If :
 
 If you have only one statement to execute, you can put it on the same line as the if statement.'''
 
-# a = 5
-# b = 2
 
-# if a > b: print("a is greater than b")
+a = 5
+b = 2
 
-# a = 2
-# b = 330
+if a > b: print("a is greater than b")
 
-# print("A") if a > b else print("B")
+a = 2
+b = 330
 
-# a = 10
-# b = 20
+print("A") if a > b else print("B")
 
-# bigger = a if a > b else b
+a = 10
+b = 20
 
-# print("Bigger is", bigger)
+bigger = a if a > b else b
 
-# a = 330
-# b = 330
+print("Bigger is", bigger)
 
-# print("A") if a > b else print("=") if a == b else print("B")
+a = 330
+b = 330
+
+print("A") if a > b else print("=") if a == b else print("B")
 
 #    ⬆️
 # both are same
-#     ⬇️
+    # ⬇️
 
-# if a > b:
-#     print("A")
-# else:
-#     if a == b:
-#         print("=")
-#     else:
-#         print("B")
+if a > b:
+    print("A")
+else:
+    if a == b:
+        print("=")
+    else:
+        print("B")
+
 
 
 '''
@@ -180,88 +198,19 @@ Logical operators are used to combine conditional statements. Python has three l
 and - Returns True if both statements are true
 or - Returns True if one of the statements is true
 not - Reverses the result, returns False if the result is true
-
 '''
 
-# a = 200
-# b = 33
-# c = 500
 
-# if a > b and c > a:
-#   print("Both conditions are True")
+a = 200
+b = 33
+c = 500
 
-# a = 200
-# b = 33
-# c = 500
+if a > b and c > a:
+  print("Both conditions are True")
 
-# if a > b or a > c:
-  # print("At least one of the conditions is True")
+a = 200
+b = 33
+c = 500
 
-# a = 33
-# b = 200
-
-# if not a > b:
-#   print("a is NOT greater than b")
-  
-
-# age = 25
-# is_student = False
-# has_discount_code = True
-
-# if (age < 18 or age > 65) and not is_student or has_discount_code:
-  #.            False.     and    True     or  True
-  #.                              False     or  True
-  #                                          True
-#   print("Discount applies!")
-
-
-# username = "Ram"
-# password = "secret123"
-# is_verified = True
-
-# if username and password and is_verified:
-#     #True   and   True  and True
-#                 # True and True
-#                 #     True
-#   print("Login successful")
-# else:
-#   print("Login failed")
-
-
-
-'''Nested If else'''
-
-# username = "Ram"
-# password = ""
-# is_active = True
-
-# if username:
-#   if password:
-#     if is_active:
-#       print("Login successful")
-#     else:
-#       print("Account is not active")
-#   else:
-#     print("Password required")
-# else:
-#   print("Username required")
-
-
-
-''' 🚨 Important 🚨
-and Operator Truth Table
-Condition 1	   Condition 2	    Result
-True	        True	        True
-True	        False	        False
-False	        True	        False
-False	        False	        False
-
-or Operator Truth Table
-Condition 1	    Condition 2	   Result
-True	        True	        True
-True	        False	        True
-False	        True	        True
-False	        False	        False
-
-'''
-
+if a > b or a > c:
+   print("At least one of the conditions is True")

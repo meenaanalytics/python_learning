@@ -234,12 +234,12 @@
 
 '''Loop over dictionary'''
 
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964,
-  'color': 'Red'
-}
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964,
+#   'color': 'Red'
+# }
 
 # print(thisdict['brand'])
 

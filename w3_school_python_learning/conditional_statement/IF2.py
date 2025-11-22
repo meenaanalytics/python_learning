@@ -155,62 +155,122 @@ Short Hand If :
 If you have only one statement to execute, you can put it on the same line as the if statement.'''
 
 
-a = 5
-b = 2
+# a = 5
+# b = 2
 
-if a > b: print("a is greater than b")
+# if a > b: print("a is greater than b")
 
-a = 2
-b = 330
+# a = 2
+# b = 330
 
-print("A") if a > b else print("B")
+# print("A") if a > b else print("B")
 
-a = 10
-b = 20
+# a = 10
+# b = 20
 
-bigger = a if a > b else b
+# bigger = a if a > b else b
 
-print("Bigger is", bigger)
+# print("Bigger is", bigger)
 
-a = 330
-b = 330
+# a = 330
+# b = 330
 
-print("A") if a > b else print("=") if a == b else print("B")
+# print("A") if a > b else print("=") if a == b else print("B")
 
-#    ⬆️
-# both are same
-    # ⬇️
+# #    ⬆️
+# # both are same
+#     # ⬇️
 
-if a > b:
-    print("A")
-else:
-    if a == b:
-        print("=")
-    else:
-        print("B")
+# if a > b:
+#     print("A")
+# else:
+#     if a == b:
+#         print("=")
+#     else:
+#         print("B")
 
 
 
 '''
-Python Logical Operators:
-Logical operators are used to combine conditional statements. Python has three logical operators:
+ Python Logical Operators:
+ Logical operators are used to combine conditional statements. Python has three logical operators:
 
 and - Returns True if both statements are true
 or - Returns True if one of the statements is true
 not - Reverses the result, returns False if the result is true
+
 '''
+ 
 
 
-a = 200
-b = 33
-c = 500
+# a = 200
+# b = 33
+# c = 500
 
-if a > b and c > a:
-  print("Both conditions are True")
+# if a > b and c > a:
+#   print("Both conditions are True")
 
-a = 200
-b = 33
-c = 500
+# a = 200
+# b = 33
+# c = 500
 
-if a > b or a > c:
-   print("At least one of the conditions is True")
+# if a > b or a > c:
+#    print("At least one of the conditions is True")
+
+
+
+# a = 33
+# b = 200
+
+# if not a > b:
+#   print("a is NOT greater than b")
+  
+
+
+
+#   age = 25
+# is_student = False
+# has_discount_code = True
+
+# if (age < 18 or age > 65) and not is_student or has_discount_code:
+#   .            False.     and    True     or  True
+#    .                              False     or  True
+                                         #    True
+#   print("Discount applies!")
+
+
+# username = "Ram"
+# password = "secret123"
+# is_verified = True
+
+
+# if username and password and is_verified:
+#     #True   and   True  and True
+#                 # True and True
+#                 #     True
+#   print("Login successful")
+# else:
+#   print("Login failed")
+
+
+'''Nested If else'''
+
+# username = "ram"
+# password = "vishak143143//"
+# is_active = True
+
+# if username:
+#     if password:
+#         if is_active:
+#             print("login successful")
+#         else:
+#             print("account is not active")
+#     else:
+#         print("password is requirde")
+# else:
+    # print("user name is required")
+
+
+    
+
+

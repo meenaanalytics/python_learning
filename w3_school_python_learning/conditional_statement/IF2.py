@@ -6,7 +6,8 @@ Less than: a < b
 Less than or equal to: a <= b
 Greater than: a > b
 Greater than or equal to: a >= b
-These conditions can be used in several ways, most commonly in "if statements" and loops.
+These conditions can be used in several ways, most commonly 
+in "if statements" and loops.
 
 An "if statement" is written by using the if keyword.'''
 
@@ -47,9 +48,12 @@ An "if statement" is written by using the if keyword.'''
 
 '''The Elif Keyword
 
-The elif keyword is Python's way of saying "if the previous conditions were not true, then try this condition".
+The elif keyword is Python's way of saying "if the previous 
+conditions were not true, then try this condition".
 
-The elif keyword allows you to check multiple expressions for True and execute a block of code as soon as one of the conditions evaluates to True.
+The elif keyword allows you to check multiple expressions 
+for True and execute a block of code as soon as one of the 
+conditions evaluates to True.
 '''
 
 
@@ -65,7 +69,9 @@ The elif keyword allows you to check multiple expressions for True and execute a
 '''
 How Elif Works:
 
-When you use elif, Python evaluates the conditions from top to bottom. As soon as it finds a condition that is true, it executes that block and skips all remaining conditions.'''
+When you use elif, Python evaluates the conditions from 
+top to bottom. As soon as it finds a condition that is true, 
+it executes that block and skips all remaining conditions.'''
 
 
 # score = int(input('Enter your Score: '))
@@ -85,7 +91,10 @@ When you use elif, Python evaluates the conditions from top to bottom. As soon a
 '''
 When to Use Elif:
 
-Use elif when you have multiple mutually exclusive conditions to check. This is more efficient than using multiple separate if statements because Python stops checking once it finds a true condition.
+Use elif when you have multiple mutually exclusive conditions 
+to check. This is more efficient than using multiple 
+separate if statements because Python stops checking 
+once it finds a true condition.
 
 '''
 
@@ -112,9 +121,11 @@ Use elif when you have multiple mutually exclusive conditions to check. This is 
 '''
 The Else Keyword:
 
-The else keyword catches anything which isn't caught by the preceding conditions.
+The else keyword catches anything which isn't caught by 
+the preceding conditions.
 
-The else statement is executed when the if condition (and any elif conditions) evaluate to False.'''
+The else statement is executed when the if condition 
+(and any elif conditions) evaluate to False.'''
 
 
 # day = int(input('Enter Day number : '))
@@ -152,7 +163,8 @@ The else statement is executed when the if condition (and any elif conditions) e
 '''
 Short Hand If :
 
-If you have only one statement to execute, you can put it on the same line as the if statement.'''
+If you have only one statement to execute, you can put it 
+on the same line as the if statement.'''
 
 
 # a = 5
@@ -193,7 +205,8 @@ If you have only one statement to execute, you can put it on the same line as th
 
 '''
  Python Logical Operators:
- Logical operators are used to combine conditional statements. Python has three logical operators:
+ Logical operators are used to combine conditional statements. 
+ Python has three logical operators:
 
 and - Returns True if both statements are true
 or - Returns True if one of the statements is true

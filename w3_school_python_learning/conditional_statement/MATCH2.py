@@ -1,8 +1,10 @@
 '''
-The match statement is used to perform different actions based on different conditions.
+The match statement is used to perform different actions 
+based on different conditions.
 
 The Python Match Statement
-Instead of writing many if..else statements, you can use the match statement.
+Instead of writing many if..else statements, 
+you can use the match statement.
 
 The match statement selects one of many code blocks to be executed.
 '''
@@ -90,3 +92,17 @@ match guest_name:
         print('1rd Floor allotted!!')
 
 
+
+month = 3 # May
+
+day = 4 # Thrusday
+
+match day:
+  case 1 | 2 | 3 | 4 | 5 if month == 3:
+    print("A weekday in March")
+  case 1 | 2 | 3 | 4 | 5 if month == 4:
+    print("A weekday in April")
+  case 1 | 2 | 3 | 4 | 5 if month == 5:
+    print("A weekday in May")
+  case _:
+    print("No match")

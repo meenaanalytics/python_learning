@@ -1,4 +1,4 @@
-'''
+''''
 Python *args and **kwargs
 
 By default, a function must be called with the correct number of arguments.
@@ -8,23 +8,25 @@ However, sometimes you may not know how many arguments that will be passed into 
 *args and **kwargs allow functions to accept a unknown number of arguments.
 '''
 
-def give_emp_detail(*args):
-    for value in args:
-        print(value)
-    print('args > ', args )
+# def give_emp_detail(*args):
+#      for value in args:
+#             print(value)
+#      print('args > ', args)  
+     
 
-give_emp_detail('vishal', 'kumar', 35, 'hyderabad', 'kondapur', 'lloyds', 'guggu_kaka', 'motuku_guggu_kaka', 'mota_billota')  
+# give_emp_detail('vishal', 'kumar', 35, 'hyderabad', 'kondapur', 'lloyds', 'guggu_kaka', 'motuku_guggu_kaka', 'mota_billota' ) 
 
 
 
-def give_emp_detail(*args):
-    # print(type(args))
-    # print(args[8])
-    return list(args)
 
-emp_detail = give_emp_detail('vishal', 'kumar', 35, 'hyderabad', 'kondapur', 'lloyds', 'guggu_kaka', 'motuku_guggu_kaka', 'mota_billota')    
+# def give_emp_detail(*args):
+#     # print(type(args))
+#     # print(args[8])
+#     return list(args)
 
-print(emp_detail)
+# emp_detail = give_emp_detail('vishal', 'kumar', 35, 'hyderabad', 'kondapur', 'lloyds', 'guggu_kaka', 'motuku_guggu_kaka', 'mota_billota')    
+
+# print(emp_detail)
 
 
 
@@ -37,7 +39,8 @@ print(emp_detail)
 #     return total
 
 # print(caculate_total(3,4,12,190, 3, 20, 40, 500))
-# print(caculate_total(50, 100, 50, 10, 20, 30))
+# print(caculate_total(50, 100, 50, 10, 20, 300))
+
 
 '''
 Arbitrary Keyword Arguments - **kwargs
@@ -46,6 +49,7 @@ If you do not know how many keyword arguments will be passed into your function,
 This way, the function will receive a dictionary of arguments and can access the items accordingly:
 
 '''
+
 
 # def child_info(**kwargs):
 #     print(kwargs)

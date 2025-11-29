@@ -49,34 +49,34 @@ A function helps avoiding code repetition.
 # def myFunc():
 #     pass
 
-# emp_info: {
-#     "name": "vishal",
-#     "age" : "35",
-#     "exp.": "5"
-# }
+emp_info: {
+    "name": "vishal",
+    "age" : "35",
+    "exp.": "5"
+}
 
-# def give_emp_details():
-#     key = ["name", "age", "exp."] 
-#     value = ["Vishal", "35", "5"]
+def give_emp_details():
+    key = ["name", "age", "exp."] 
+    value = ["Vishal", "35", "5"]
 
-#     # key[0]
+    # key[0]
 
-#     emp_info = {}
+    emp_info = {}
 
-#     # emp_info['name'] = 'Vishal'
+    # emp_info['name'] = 'Vishal'
 
-#     for i in range(len(key)): #range(len(key)) -> range(3)
-#         # print('inside for loop > ', i)
-#         emp_info[key[i]] = value[i]
+    for i in range(len(key)): #range(len(key)) -> range(3)
+        # print('inside for loop > ', i)
+        emp_info[key[i]] = value[i]
     
-#     return emp_info
+    return emp_info
        
 
-# emp_data = give_emp_details()
-# emp_data2 = give_emp_details()
+emp_data = give_emp_details()
+emp_data2 = give_emp_details()
 
-# print(emp_data)
-# print(emp_data2)
+print(emp_data)
+print(emp_data2)
 
 
 '''
@@ -90,13 +90,13 @@ Arguments are specified after the function name, inside the parentheses. You can
 # value = ["Vishal", "35", "5"]
 
 # def give_emp_details(value):
-    # key = ["name", "age", "exp."] 
-    # emp_info = {}
+#     key = ["name", "age", "exp."] 
+#     emp_info = {}
 
-    # for i in range(len(key)):
-    #     emp_info[key[i]] = value[i]
+#     for i in range(len(key)):
+#         emp_info[key[i]] = value[i]
     
-    # return emp_info
+#     return emp_info
     
 # emp_detail = give_emp_details( 
 #     ["Vishal", "35", "5"]

@@ -91,10 +91,10 @@ A decorator is a function that takes another function as input and returns a new
 
 # @changecase
 # @addgreeting
-# def sayMyName():
-#   return "Guggu Kaka"
+def sayMyName():
+  return "Guggu Kaka"
 
-# print(sayMyName())
+print(sayMyName())
 
 '''
 Preserving Function Metadata

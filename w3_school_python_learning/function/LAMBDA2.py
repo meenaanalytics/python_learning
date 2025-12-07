@@ -14,10 +14,17 @@ A lambda function can take any number of arguments, but can only have one expres
 # print(x(5))
 
 
+
 # def x(a):
 #     return a + 10
 
 # print(x(5))
+
+
+
+# y = lambda v : v + 50
+# print(y(7))
+
 
 
 '''multiple argument'''
@@ -29,6 +36,7 @@ A lambda function can take any number of arguments, but can only have one expres
 
 # x = lambda a, b, c : a + b + c
 # print(x(5, 6, 2))
+
 
 
 '''
@@ -45,7 +53,7 @@ and that argument will be multiplied with an unknown number:
 #   return lambda a : a * n
 
 # first_func = myfunc(5)
-# print(first_func(10))
+# print(first_func(13))
 
 # def myfunc2(n):
 #   def innerfunc(a):
@@ -57,7 +65,9 @@ and that argument will be multiplied with an unknown number:
 
 
 
+
 '''The map() function applies a function to every item in an iterable:'''
+
 # def doubleNumFunc(num):
 #     return num * 2
 
@@ -69,31 +79,30 @@ and that argument will be multiplied with an unknown number:
 
 
 '''The filter() function creates a list of items for which a function returns True:'''
+
 # numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 # odd_numbers = list(filter(lambda x: x % 2 != 0, numbers))
 # print(numbers)
 # print(odd_numbers)
 
 
-
 '''The sorted() function can use a lambda as a key for custom sorting:'''
 
-# x = ("Ram", 25)
-# print(x[1])
+x = ("Ram", 25)
+print(x[1])
 
-# students = [("Ram", 25), ("Sham", 2), ("Lucky", 12), ("Bruce", 18)]
-# sorted_students = sorted(students, key=lambda x: x[1], reverse=True)
-# print(sorted_students)
+students = [("Ram", 25), ("Sham", 2), ("Lucky", 12), ("Bruce", 18)]
+sorted_students = sorted(students, key=lambda x: x[1], reverse=True)
+print(sorted_students)
 
-# numbers = [10, 12, 30, 4, 45, 36, 17, 8]
-# names = ['Ram', 'Sham' , 'Vishal' , 'Raghav' , 'Ajay', 'Vijay']
-# print(sorted(names, reverse=True))
-# print(sorted(numbers, reverse=True))
-
-
+numbers = [10, 12, 30, 4, 45, 36, 17, 8]
+names = ['Ram', 'Sham' , 'Vishal' , 'Raghav' , 'Ajay', 'Vijay']
+print(sorted(names, reverse=True))
+print(sorted(numbers, reverse=True))
 
 
-# words = ["apple", "pie", "banana", "cherry"]
-# sorted_words = sorted(words, key=lambda x: len(x), reverse=True)
-# print(sorted_words)
 
+
+words = ["apple", "pie", "banana", "cherry"]
+sorted_words = sorted(words, key=lambda x: len(x), reverse=True)
+print(sorted_words)

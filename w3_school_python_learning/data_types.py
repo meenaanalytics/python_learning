@@ -16,17 +16,17 @@
 # x = memoryview(bytes(5))	                    memoryview	
 # x = None	                                    NoneType	
 
-'''set'''  #similar like list, tuple but have no indexing , items index is not fixed they shuffle everytime you run it
+# '''set'''  #similar like list, tuple but have no indexing , items index is not fixed they shuffle everytime you run it
 
 # list , tuple, dict, 
 
-# my_set = {'Vishal', 'Chandigarh', 'Guggu', 'holiday', 30, 7000000} #indexing is not fixed automatically decided
+my_set = {'Vishal', 'Chandigarh', 'Guggu', 'holiday', 30, 7000000} #indexing is not fixed automatically decided
 
-# print(my_set)
-# my_set.add('Trip')
-# print(my_set)
+print(my_set)
+my_set.add('Trip')
+print(my_set)
 
-'''frozen_set'''
+#'''frozen_set'''
 
 # my_set = frozenset(['Vishal', 'Chandigarh', 'Guggu'])
 

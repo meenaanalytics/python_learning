@@ -1,5 +1,12 @@
+python length start from 1
+python index start from 0
+
+By sunday function will be over🚨
+
 git add .
 
 git commit -m "<message>"
 
 git push
+
+git branch --show-current

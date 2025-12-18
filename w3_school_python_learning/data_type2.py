@@ -17,7 +17,8 @@
 # x = None	                                    NoneType	
 
 
-'''set'''  #similar like list , tuple but have no indexing , item index is not fixed they shuffel everytime youn run
+'''set'''  #similar like list , tuple but have no indexing , item index is not fixed 
+# they shuffel everytime youn run
 
 # list , tuple , dict
 

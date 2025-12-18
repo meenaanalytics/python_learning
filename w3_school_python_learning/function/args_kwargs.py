@@ -8,42 +8,44 @@ However, sometimes you may not know how many arguments that will be passed into 
 *args and **kwargs allow functions to accept a unknown number of arguments.
 '''
 
-def give_emp_detail(*args):
-    for value in args:
-        print(value)
-    print('args > ', args )
+# def give_emp_detail(*args):
+#     for value in args:
+#         print(value)
+#     print('args > ', args )
 
-give_emp_detail('vishal', 'kumar', 35, 'hyderabad', 'kondapur', 'lloyds', 'guggu_kaka', 'motuku_guggu_kaka', 'mota_billota')  
-
-
-
-def give_emp_detail(*args):
-    # print(type(args))
-    # print(args[8])
-    return list(args)
-
-emp_detail = give_emp_detail('vishal', 'kumar', 35, 'hyderabad', 'kondapur', 'lloyds', 'guggu_kaka', 'motuku_guggu_kaka', 'mota_billota')    
-
-print(emp_detail)
+# give_emp_detail('vishal', 'kumar', 35, 'hyderabad', 'kondapur', 'lloyds', 'guggu_kaka', 'motuku_guggu_kaka', 'mota_billota')  
 
 
 
-# def caculate_total(*args):
-#     args = (3,4,12,190, 3, 20, 40, 500)
-#     total = 0
-#     for num in args:
-#         total = total + num  # or total += num
+# def give_emp_detail(*args):
+#     # print(type(args))
+#     # print(args[8])
+#     return list(args)
+
+# emp_detail = give_emp_detail('vishal', 'kumar', 35, 'hyderabad', 'kondapur', 'lloyds', 'guggu_kaka', 'motuku_guggu_kaka', 'mota_billota')    
+
+# print(emp_detail)
+
+
+
+def caculate_total(*args):
+    args = (3,4,12,190, 3, 20, 40, 500)
+    total = 0
+    for num in args:
+        total = total + num  # or total += num
     
-#     return total
+    return total
 
-# print(caculate_total(3,4,12,190, 3, 20, 40, 500))
-# print(caculate_total(50, 100, 50, 10, 20, 30))
+print(caculate_total(3,4,12,190, 3, 20, 40, 500))
+print(caculate_total(50, 100, 50, 10, 20, 30))
 
 '''
 Arbitrary Keyword Arguments - **kwargs
-If you do not know how many keyword arguments will be passed into your function, add two asterisks ** before the parameter name.
+If you do not know how many keyword arguments will be passed into your function, 
+add two asterisks ** before the parameter name.
 
-This way, the function will receive a dictionary of arguments and can access the items accordingly:
+This way, the function will receive a dictionary of arguments and 
+can access the items accordingly:
 
 '''
 

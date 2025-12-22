@@ -234,24 +234,24 @@
 
 '''Loop over dictionary'''
 
-# thisdict = {
-#   "brand": "Ford",
-#   "model": "Mustang",
-#   "year": 1964,
-#   'color': 'Red'
-# }
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  'color': 'Red'
+}
 
-# print(thisdict['brand'])
+print(thisdict['brand'])
 
-# for key_value in thisdict:
-#     print(thisdict[key_value])
+for key_value in thisdict:
+    print(thisdict[key_value])
 
-# x = 'brand'
+x = 'brand'
 
-# print(thisdict[x])
+print(thisdict[x])
 
-# for key in thisdict:
-#     print(f'{key} : {thisdict[key]}')
+for key in thisdict:
+    print(f'{key} : {thisdict[key]}')
 
 
 # for value in thisdict.values():

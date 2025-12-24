@@ -306,6 +306,8 @@ employee_detail = {
 # print(fruit[i])
 
 
+# fruits = ["apple", "cherry", "grapes", "lichi"]
+
 # i = 0
 # j = 5
 
@@ -315,8 +317,8 @@ employee_detail = {
 #     i += 1
 
 
-# print(fruits) 
-#   
+# print(a) 
+# #   
 
 # fruits = ["apple", "cherry", "grapes", "lichi"]
 
@@ -365,14 +367,14 @@ employee_detail = {
 
 
 
-a = int(input("Enter a number : "))
+# a = int(input("Enter a number : "))
 # table = []
-i = 1
-j = 11
+# i = 1
+# j = 11
 
-while i < j:
-    # table.append(13 * i)
-    print(f"{a} * {i} : {a * i}")
-    i +=1
+# while i < j:
+#     table.append(13 * i)
+#     print(f"{a} * {i} : {a * i}")
+#     i +=1
 
     

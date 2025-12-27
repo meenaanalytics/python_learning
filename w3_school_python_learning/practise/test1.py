@@ -19,19 +19,19 @@
 # print(i)
 
 
-# num = [4 , 50, 42 , 16 ,2]
+num = [4 , 50, 42 , 16 ,2]
 
-# def SumofList(numList):
-#     # print(numList)
-#     total = 0
-#     for number in numList:
-#         total = total+ number
+def SumofList(numList):
+    # print(numList)
+    total = 0
+    for number in numList:
+        total = total+ number
 
-#     return total 
+    return total 
 
-# v=SumofList(num)    
+v=SumofList(num)    
 
-# print(v)
+print(v)
 
 
 

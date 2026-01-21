@@ -58,43 +58,43 @@
 # print(type(thisdict))
 
 
-# fruits = list(("apple", "banana","cherry", "mango"))
-# fruits = tuple(("apple", "banana", "cherry", "mango"))
-# fruits = set(("apple", "banana", "cherry", "mango"))
+fruits = list(("apple", "banana","cherry", "mango"))
+fruits = tuple(("apple", "banana", "cherry", "mango"))
+fruits = set(("apple", "banana", "cherry", "mango"))
 
-# thisDict = dict(name= "jhon" , age=39, country= "france")
-# print(thisDict)
-
-
-# thisdict = {
-#     "brand": "ford",
-#     "model": "mustang",
-#     "year": 1965
-
-# }
+thisDict = dict(name= "jhon" , age=39, country= "france")
+print(thisDict)
 
 
-# x = thisdict["brand"]
-# x = thisdict.get("brand")
+thisdict = {
+    "brand": "ford",
+    "model": "mustang",
+    "year": 1965
 
-# x = thisdict.keys()
-# x = thisdict.values()
+}
 
-# print(x)
 
-# car = {
-#     "brand": "ford",
-#     "model": "mustang",
-#     "year": 1965
-# }
+x = thisdict["brand"]
+x = thisdict.get("brand")
 
-# x = car.keys()
+x = thisdict.keys()
+x = thisdict.values()
 
-# print(x)   #before the change
+print(x)
 
-# car["color"] = "white"
+car = {
+    "brand": "ford",
+    "model": "mustang",
+    "year": 1965
+}
 
-# print(x)    #after the change
+x = car.keys()
+
+print(x)   #before the change
+
+car["color"] = "white"
+
+print(x)    #after the change
 
 
 # car = {

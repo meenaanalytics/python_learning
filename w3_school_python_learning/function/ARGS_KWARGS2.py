@@ -8,13 +8,13 @@ However, sometimes you may not know how many arguments that will be passed into 
 *args and **kwargs allow functions to accept a unknown number of arguments.
 '''
 
-# def give_emp_detail(*args):
-#      for value in args:
-#             print(value)
-#      print('args > ', args)  
+def give_emp_detail(*args):
+     for value in args:
+            print(value)
+     print('args > ', args)  
      
 
-# give_emp_detail('vishal', 'kumar', 35, 'hyderabad', 'kondapur', 'lloyds', 'guggu_kaka', 'motuku_guggu_kaka', 'mota_billota' ) 
+give_emp_detail('vishal', 'kumar', 35, 'hyderabad', 'kondapur', 'lloyds', 'guggu_kaka', 'motuku_guggu_kaka', 'mota_billota' ) 
 
 
 
@@ -30,7 +30,7 @@ However, sometimes you may not know how many arguments that will be passed into 
 
 
 
-# def caculate_total(*args):
+# def calculator_total(*args):
 #     args = (3,4,12,190, 3, 20, 40, 500)
 #     total = 0
 #     for num in args:
@@ -38,8 +38,8 @@ However, sometimes you may not know how many arguments that will be passed into 
     
 #     return total
 
-# print(caculate_total(3,4,12,190, 3, 20, 40, 500))
-# print(caculate_total(50, 100, 50, 10, 20, 300))
+# print(calculator_total(3,4,12,190, 3, 20, 40, 500))
+# print(calculator_total(50, 100, 50, 10, 20, 300))
 
 
 '''
@@ -68,8 +68,8 @@ This way, the function will receive a dictionary of arguments and can access the
 
 
 
-def my_function(**myvar):
-    for [key,value] in myvar.items():
-        print(f"{key} -> {value}")
+# def my_function(**myvar):
+#     for [key,value] in myvar.items():
+#         print(f"{key} -> {value}")
 
-my_function(name = "Guggu", age = 8, city = "Noodlespur")
+# my_function(name = "Guggu", age = 8, city = "Noodlespur")

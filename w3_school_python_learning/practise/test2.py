@@ -49,24 +49,24 @@
 # GUGGU
 # BUDDU
 
-# def TabletAble(table , a , b , method):
-#     print('method >> ',method)
+def TabletAble(table , a , b , method):
+    print('method >> ',method)
 
-#     if method == 'FOR':
-#         print('For loop block!!')
-#         for _ in range(a , b):
-#             print(f"{table} * {_} : {table * _}")
+    if method == 'FOR':
+        print('For loop block!!')
+        for _ in range(a , b):
+            print(f"{table} * {_} : {table * _}")
             
-#     else:
-#         print('While loop block!!')
-#         i = a
-#         j = b
-#         while i < j:
-#             print(f"{table} * {i} : {table * i}")
-#             i += 1
+    else:
+        print('While loop block!!')
+        i = a
+        j = b
+        while i < j:
+            print(f"{table} * {i} : {table * i}")
+            i += 1
 
 
-# TabletAble(2 , 1 , 9 , "WHILE")
+TabletAble(2 , 1 , 9 , "WHILE")
 
 
 

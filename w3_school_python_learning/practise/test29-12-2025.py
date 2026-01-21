@@ -76,7 +76,7 @@
 # if age < 12:
 #     print(f'Your ticket price is ₹{child_ticket_price}')
 # else:
-    # if showDict[show_time] == 'morning':
+#     if showDict[show_time] == 'morning':
 #         if age >= 60:
 #             print(f'Good morning!!!, Your ticket price is {adult_M_ticket_price * senior_citizens_discount}')
 #         else:
@@ -215,48 +215,48 @@
 # 🧠 Apply discounts in correct order.
 
 
-def calculateBillAfterDiscount(discount_rate):
-    discount_value = amount * discount_rate
-    final_bill = amount - discount_value
-    return final_bill
+# def calculateBillAfterDiscount(discount_rate):
+#     discount_value = amount * discount_rate
+#     final_bill = amount - discount_value
+#     return final_bill
 
 
-discount_above_3000 = 20 / 100 # 0.2
-discount_above_1000 = 10 / 100 # 0.1
-membership_discount = 5 / 100 #0.05
+# discount_above_3000 = 20 / 100 # 0.2
+# discount_above_1000 = 10 / 100 # 0.1
+# membership_discount = 5 / 100 #0.05
 
-final_discount = 0
+# final_discount = 0
 
-membershipObj = {
-    '0': 'NO',
-    '1': 'YES'
-}
+# membershipObj = {
+#     '0': 'NO',
+#     '1': 'YES'
+# }
 
-amount = float(input('Enter amount: '))
-membership = input("Do you have the membership (0 for NO, 1 for YES): ")
+# amount = float(input('Enter amount: '))
+# membership = input("Do you have the membership (0 for NO, 1 for YES): ")
 
-if membershipObj[membership] == 'YES':
-    final_discount += membership_discount
-    print('Membership discount applied of 5%', final_discount)
-    if amount >= 3000:
-        final_discount += discount_above_3000
-        print(f'Your bill is total : {amount}, {final_discount * 100}% discount applied!!')
-        print(f'Your bill after discount: {calculateBillAfterDiscount(final_discount)}')
-    elif amount >= 1000:
-        final_discount += discount_above_1000
-        print(f'Your bill is total : {amount}, {final_discount * 100}% discount applied!!')
-        print(f'Your bill after discount: {calculateBillAfterDiscount(final_discount)}')
+# if membershipObj[membership] == 'YES':
+#     final_discount += membership_discount
+#     print('Membership discount applied of 5%', final_discount)
+#     if amount >= 3000:
+#         final_discount += discount_above_3000
+#         print(f'Your bill is total : {amount}, {final_discount * 100}% discount applied!!')
+#         print(f'Your bill after discount: {calculateBillAfterDiscount(final_discount)}')
+#     elif amount >= 1000:
+#         final_discount += discount_above_1000
+#         print(f'Your bill is total : {amount}, {final_discount * 100}% discount applied!!')
+#         print(f'Your bill after discount: {calculateBillAfterDiscount(final_discount)}')
 
-else:
-    final_discount = 0
-    if amount >= 3000:
-        final_discount += discount_above_3000
-        print(f'Your bill is total : {amount}, {final_discount * 100}% discount applied!!')
-        print(f'Your bill after discount: {calculateBillAfterDiscount(final_discount)}')
-    elif amount >= 1000:
-        final_discount += discount_above_1000
-        print(f'Your bill is total : {amount}, {final_discount * 100}% discount applied!!')
-        print(f'Your bill after discount: {calculateBillAfterDiscount(final_discount)}')
+# else:
+#     final_discount = 0
+#     if amount >= 3000:
+#         final_discount += discount_above_3000
+#         print(f'Your bill is total : {amount}, {final_discount * 100}% discount applied!!')
+#         print(f'Your bill after discount: {calculateBillAfterDiscount(final_discount)}')
+#     elif amount >= 1000:
+#         final_discount += discount_above_1000
+#         print(f'Your bill is total : {amount}, {final_discount * 100}% discount applied!!')
+#         print(f'Your bill after discount: {calculateBillAfterDiscount(final_discount)}')
 
 
 
@@ -305,3 +305,55 @@ else:
 #     elif amount >= 1000:
 #         final_discount += discount_above_1000
 #         handleDiscountBasedonBill(amount, final_discount)
+
+
+
+# 6️⃣ Online Shopping Bill 🛒
+# Ask:
+# amount
+# membership (yes / no)
+# Rules:
+# If amount ≥ 3000 → 20% off
+# Else if amount ≥ 1000 → 10% off
+# Members get extra 5% off
+# 🧠 Apply discounts in correct order.
+
+def BillAfterDiscount(discount):
+    discount_value = amount * discount
+    final_discount = amount - discount_value
+    return final_discount
+
+amount = float(input("Enter amount : "))
+membership = input("you have a membership(0 for NO , 1 for YES)")
+
+discount_above_3000 = 20 / 100
+discount_above_1000 = 10 / 100
+membership_discount = 5 / 100
+
+final_discount = 0
+
+membershipObj = {
+    '0' : 'NO',
+    '1' : 'YES'
+}
+
+if membershipObj[membership] == 'YES':
+    final_discount += membership_discount
+    print("membership apply 5% discount-- ", final_discount)
+    if amount >= 3000:
+        final_discount += discount_above_3000
+        print("apply your 20% discount--", final_discount * 100)
+        print(f"your bill is : {amount} , {BillAfterDiscount(final_discount)}")
+    elif amount >=1000:
+        final_discount += discount_above_1000
+        print(f"apply your 10% discount-- , final_discount")
+        print(f"your bill is : {amount} , {BillAfterDiscount(final_discount)}")
+else:
+    if amount >= 3000:
+        final_discount += discount_above_3000
+        print("apply your 20% discount--", final_discount * 100)
+        print(f"your bill is : {amount} , {BillAfterDiscount(final_discount)}")
+    elif amount >=1000:
+        final_discount += discount_above_1000
+        print(f"apply your 10% discount-- , final_discount")
+        print(f"your bill is : {amount} , {BillAfterDiscount(final_discount)}")

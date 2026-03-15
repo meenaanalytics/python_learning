@@ -19,19 +19,19 @@
 # print(i)
 
 
-num = [4 , 50, 42 , 16 ,2]
+# num = [4 , 50, 42 , 16 ,2]
 
-def SumofList(numList):
-    # print(numList)
-    total = 0
-    for number in numList:
-        total = total+ number
+# def SumofList(numList):
+#     # print(numList)
+#     total = 0
+#     for number in numList:
+#         total = total+ number
 
-    return total 
+#     return total 
 
-v=SumofList(num)    
+# v=SumofList(num)    
 
-print(v)
+# print(v)
 
 
 
@@ -45,7 +45,7 @@ print(v)
 
 
 
-# fruits = ['apple', 'grapes', 'mango', 'cherry'] 
+# fruits = ['apple', 'grapes', 'mango', 'cherry','papaya'] 
 
 # def LengthString(fruitlist):
 #     length = len(fruitlist)
@@ -74,7 +74,7 @@ print(v)
 # def addFruitTolist():
 #     fruits = []
 #     i = 0
-#     j = 5
+#     j = 4
 #     while i < j:
 #         fruit = input("Enter fruits : ")
 #         fruits.append(fruit)
@@ -178,17 +178,17 @@ return employee_detail
 # ---------------helper-----------------
 
 
-Student_details_dict = {
-    'Name' : 'Vishal',
-    'Class' : '10th',
-    'Subject' : 'Math',
-    'Grade' : 'A'
-}    
+# Student_details_dict = {
+#     'Name' : 'Vishal',
+#     'Class' : '10th',
+#     'Subject' : 'Math',
+#     'Grade' : 'A'
+# }    
 
-# {
-#     'list1' : ['Name', 'Class', 'Subject', 'Grade'],
-#     'list2' : ['Vishal', '10th', 'Math', 'A']
-# }
+{
+    'list1' : ['Name', 'Class', 'Subject', 'Grade'],
+    'list2' : ['Vishal', '10th', 'Math', 'A']
+}
 
 # def Student_details(shi_link):
 #     list1 = []
@@ -205,6 +205,14 @@ Student_details_dict = {
 
 
 # print(Student_details(Student_details_dict))
+
+
+Student_details_dict = {
+    'Name' : 'Vishal',
+    'Class' : '10th',
+    'Subject' : 'Math',
+    'Grade' : 'A'
+}    
 
 
 
@@ -242,8 +250,7 @@ employee_detail = {
 'salary': 50000
 }
 
-# 1.create a function which take dictionary as a argument
-# 2.
+'1.create a function which take dictionary as a argument'
 
 
 # def generateEmployeeDetailLists(obj):
@@ -276,7 +283,7 @@ employee_detail = {
 #         list2 = list2[i]
 #     }
 
-# x = employee_detail(employee_detaia)
+# x = employee_detail(employee_detail)
 
 # i = 0
 # # j = 5
@@ -301,9 +308,8 @@ employee_detail = {
 
 # fruits = []
 
-# hints
 # len(fruits)
-# print(fruit[i])
+# print(fruits[i])
 
 
 # fruits = ["apple", "cherry", "grapes", "lichi"]
@@ -314,11 +320,11 @@ employee_detail = {
 # while i <j:
 #     a = input("Enter a fruits : ")
 #     fruits.append(a)
-#     i += 1
+    # i += 1
 
 
 # print(a) 
-# #   
+   
 
 # fruits = ["apple", "cherry", "grapes", "lichi"]
 
@@ -378,3 +384,32 @@ employee_detail = {
 #     i +=1
 
     
+'''(-----------------------------'(REVISION)'--------------------------------------------)'''
+
+
+
+def tabletABle(table , a , b , moon):
+    list_table = []
+
+    if moon == 'FOR':
+        print("FOR  loop block !!")
+
+        for _ in range(a , b):
+            print(f"{table} * {_} : {table * _}")
+            list_table.append(table * _)
+
+    else: 
+        print('while loop block!!')    
+    i = a
+    j = b
+
+    while i < j:
+        print(f"{table} * {i} : {table * i}")
+        list_table.append(table * i)
+        i += 1
+
+        return list_table
+
+sun = tabletABle( 5 , 1 , 11 , "while")
+
+print(sun)

@@ -234,49 +234,225 @@ Ask payment amount
 Print remaining balance or success message
 Generate transaction ID'''
 
-plans = {
-    "M": ("1 Month", 199),
-    "3": ("3 Months", 599),
-    "Y": ("1 Year", 1999)
-}
+# plans = {
+#     "M": ("1 Month", 199),
+#     "3": ("3 Months", 599),
+#     "Y": ("1 Year", 1999)
+# }
 
-plan_details = {}
+# plan_details = {}
 
-plan_month =  199
-plan_months =  599
-plan_year = 1999
+# plan_month =  199
+# plan_months =  599
+# plan_year = 1999
 
-user_name = input("Enter your name : ")
-mobile_number = int(input("Enter mobile number : "))
+# user_name = input("Enter your name : ")
+# mobile_number = int(input("Enter mobile number : "))
 
-plan_details['user_name'] = user_name
-plan_details['mobile_number'] = mobile_number
+# plan_details['user_name'] = user_name
+# plan_details['mobile_number'] = mobile_number
 
-recharge_plan = input("Enter your recharge plan(M,3 ,Y )").upper()
+# recharge_plan = input("Enter your recharge plan(M,3 ,Y )").upper()
 
-plan_details['recharge_plan'] = recharge_plan
+# plan_details['recharge_plan'] = recharge_plan
 
-payment_amount = int(input("Enter your payment amount : "))
-plan_details['payment_amount'] = payment_amount
+# payment_amount = int(input("Enter your payment amount : "))
+# plan_details['payment_amount'] = payment_amount
 
-print("M → 1 Month ₹199")
-print("3 → 3 Months ₹599")
-print("Y → 1 Year ₹1999")
+# print("M → 1 Month ₹199")
+# print("3 → 3 Months ₹599")
+# print("Y → 1 Year ₹1999")
 
-if recharge_plan not in plans :
-     print("invalid recharge plan!!")
+# if recharge_plan not in plans :
+#      print("invalid recharge plan!!")
 
-plan_name, plan_price = plans[recharge_plan]
+# plan_name, plan_price = plans[recharge_plan]
 
-plan_details['plan'] = plan_name
-plan_details['plan_price'] = plan_price
+# plan_details['plan'] = plan_name
+# plan_details['plan_price'] = plan_price
 
-booking_ID  = "BK" + str(random.randint(100000, 999999)) 
-plan_details['booking_ID'] = booking_ID
-plan_details['pending_balance'] = plan_details['plan_price'] - plan_details['payment_amount']
+# booking_ID  = "BK" + str(random.randint(100000, 999999)) 
+# plan_details['booking_ID'] = booking_ID
+# plan_details['pending_balance'] = plan_details['plan_price'] - plan_details['payment_amount']
 
-for key , value in plan_details.items():
-    print(f"{key} : {value}")
+# for key , value in plan_details.items():
+#     print(f"{key} : {value}")
+
+
+'''(--------------------------------------------------------------------------------------)'''
+
+'''3️⃣ Student Result Processing System
+Scenario:
+Process exam results of students.
+Requirements:
+Input student name and marks in 5 subjects
+Calculate:
+Total marks
+Percentage
+Grade (A/B/C/Fail)
+Display class topper'''
+
+      
+# overall_mark = 500
+# student_marks = []
+
+
+# def calculateGrade(percentage):
+#     if percentage >= 90:
+#         return "A"
+#     elif percentage >= 80:
+#         return "B"
+#     elif percentage >= 70:
+#         return "C"
+#     elif percentage >= 60:
+#         return "D"
+#     elif percentage >= 50:
+#         return "E"
+#     elif percentage >= 40:
+#         return "F"
+#     else:
+#         return "FAIL" 
+
+# total_no_of_student = int(input('Enter total no of student: '))
+
+# topperDict = {
+#         'name': '',
+#         'topper_percentage': 0
+# }
+
+# for i in range(total_no_of_student):
+#     student_name = input('Enter student name: ')
+#     marksDict = {
+#     'english':0,
+#     'maths': 0,
+#     'science':0,
+#     'hindi': 0,
+#     'punjabi': 0,
+#     }
+
+#     total_marks = 0
+
+#     for key, value in marksDict.items():
+#         marks = int(input(f"Enter you marks in {key}: "))
+#         marksDict[key] = marks
+    #     total_marks += marks
+
+    # tPercentage = total_marks/overall_mark * 100
+
+    # if topperDict['topper_percentage'] < tPercentage:
+    #     topperDict['topper_percentage'] = tPercentage
+    #     topperDict['name'] = student_name
+
+    # student_marks.append({
+    #     'student_name': student_name,
+    #     'marks': marksDict,
+    #     'total_marks': total_marks,
+    #     'total_percentage': tPercentage,
+    #     'grade': calculateGrade(tPercentage)
+    # })
+
+    # print(topperDict)
+
+
+# print(student_marks)
+# print(topperDict)
+
+
+'''(----------------------------------------------------------------------------------------)'''
+'''✅ Employee Performance Evaluation System (Same Pattern)
+🧠 What this program does
+Takes employee name
+Takes performance scores in 5 tasks
+Calculates:
+Total score
+Average score
+Performance Grade
+Displays best performing employee'''
+
+overall_performance_scores = 5
+
+def EmployeePerformanceScore(Performance):
+    if Performance >= 80:
+        return "Excellent"
+    elif Performance >= 60:
+        return "Very good"
+    elif Performance >= 50:
+        return "Good"
+    else:
+        return "Poor"
+    
+
+total_no_of_employ = int(input("Enter total number of employees : "))
+
+Employee_Dict = {}
+
+best_employee = ""
+best_average = 0
+
+for i in range(total_no_of_employ):
+   employ_name = input("Enter employ name : ")
+   total_score = 0
+
+#    for key , values in Employee_Dict.items():
+#       score = int(input(f"Enter score for task{key}:"))
+#       score[Employee_Dict] = score
+#       total_score =  total_score + score
+      
+   for j in range(overall_performance_scores):
+        score = int(input(f"Enter score for task {j+1}: "))
+        total_score =  total_score + score
+
+
+   average = total_score / overall_performance_scores 
+   grade = EmployeePerformanceScore(average)
+
+   Employee_Dict[employ_name] = {
+        "Total Score": total_score,
+        "Average Score": average,
+        "Grade": grade
+    }
+   
+   print(Employee_Dict)
+   
+   if average > best_average:
+    best_average = average
+    best_employee = employ_name
+
+
+print("\nBest Employee:", best_employee)
+print("Best Average Score:", best_average)
 
 
 
+
+
+
+# {
+#     'v': {
+#         'Total Score': 15,
+#         'Average Score': 3.0,
+#         'Grade': 'Poor'
+#         }
+# }
+    
+
+
+
+'''(----------------------------------------------------------------------)'''
+
+#solution-1 (using exponentiation) 
+
+# num = 64
+# num1 = int(input("Enter a number here : "))
+# sr = num1**(0.5)
+# print("the square root of the given number is",sr)
+
+
+
+
+#solution-2 (using math module)
+# import math
+
+# num = int(input("Enter a number here : "))
+# sr = math.sqrt(num)
+# print("the square root of the given number is : ", sr)

@@ -73,7 +73,7 @@ output=5
 
 '''(9)..wrt a program to check if a given number , such as 7, is a prime number'''
 
-# num = 7
+# num = 9
 # is_prime = True
  
 # for i in range(2, int(25 ** 0.5) + 1):
@@ -105,46 +105,46 @@ output=5
 
 '''--------------------------------------------------------------------------------------'''
 
-# 7️⃣ Movie Ticket Pricing 🎬
-# Ask:
-# age
-# show time ("morning", "evening")
-# Rules:
-# Children (<12): ₹100
-# Adults:
-# Morning → ₹150
-# Evening → ₹200
-# Senior citizens (≥60): 50% off
+'''7️⃣ Movie Ticket Pricing 🎬
+Ask:
+age
+show time ("morning", "evening")
+Rules:
+Children (<12): ₹100
+Adults:
+Morning → ₹150
+Evening → ₹200
+Senior citizens (≥60): 50% off
+'''
+child_ticket_price = 100
+adult_M_ticket_price = 150
+adult_E_ticket_price = 200
 
-# child_ticket_price = 100
-# adult_M_ticket_price = 150
-# adult_E_ticket_price = 200
+senior_citizens_discount = 50 / 100 # 0.5
 
-# senior_citizens_discount = 50 / 100 # 0.5
+showDic ={
+    'M' : 'morning',
+    'E' : 'evening'
+}
 
-# showDic ={
-#     'M' : 'morning',
-#     'E' : 'evening'
-# }
+age = int(input("Enter your age : "))
 
-# age = int(input("Enter your age : "))
+show_time = input("Enter your show time(M for morning, E for evening)")
 
-# show_time = input("Enter your show time(M for morning, E for evening)")
-
-# if age < 12:
-#     print("Your ticket price is : {child_ticket_price}")
-# else:
-#     if showDic[show_time] == 'morning':
-#         if age >= 60:
-#             print(f"your ticket price is : {adult_M_ticket_price * senior_citizens_discount}") 
-#         else:
-#             print(f"your ticket price is : {adult_M_ticket_price }")
-    # else:
+if age < 12:
+    print("Your ticket price is : {child_ticket_price}")
+else:
+    if showDic[show_time] == 'morning':
+        if age >= 60:
+            print(f"your ticket price is : {adult_M_ticket_price * senior_citizens_discount}") 
+        else:
+            print(f"your ticket price is : {adult_M_ticket_price }")
+    else:
         
-    #     if age >= 60:
-    #         print(f'Good evening!!! Your ticket price is ₹{adult_E_ticket_price * senior_citizens_discount}')
-    #     else:
-    #         print(f'Good evening!! Your ticket price is ₹{adult_E_ticket_price}')
+        if age >= 60:
+            print(f'Good evening!!! Your ticket price is ₹{adult_E_ticket_price * senior_citizens_discount}')
+        else:
+            print(f'Good evening!! Your ticket price is ₹{adult_E_ticket_price}')
                 
 
 
@@ -160,37 +160,37 @@ Yearly → ₹10000
 Age ≥ 60 → 30% discount
 Print final fee'''
 
-# showDic ={
-#     'M' : 'monthly',
-#     'Y' : 'yearly'
-# }
+showDic ={
+    'M' : 'monthly',
+    'Y' : 'yearly'
+}
 
-# final_discount = 0
+final_discount = 0
 
-# age = int(input("Enter your age : "))
+age = int(input("Enter your age : "))
 
-# plan = input("Enter your plan('M for monthly' or 'Y for yearly') : ")
+plan = input("Enter your plan('M for monthly' or 'Y for yearly') : ")
 
-# Monthly_base_fee = 1000
-# Yearly_base_fee = 10000
-# discount_fee = 30 / 100 # 0.3
+Monthly_base_fee = 1000
+Yearly_base_fee = 10000
+discount_fee = 30 / 100 # 0.3
 
-# Monthly_fee_after_discount = 0
-# Yearly_fee_after_discount = 0
+Monthly_fee_after_discount = 0
+Yearly_fee_after_discount = 0
 
-# if age >= 60:
-#     final_discount += discount_fee
-#     if showDic[plan] == 'monthly':
-#         Monthly_fee_after_discount = Monthly_base_fee - (Monthly_base_fee * final_discount)
-#         print(f'Your fee after discount : ₹{Monthly_fee_after_discount}')
-#     else:
-#         Yearly_fee_after_discount = Yearly_base_fee - (Yearly_base_fee * final_discount)
-#         print(f'Your fee after discount : ₹{Yearly_fee_after_discount}')
-# else:
-#     if showDic[plan] == 'monthly':
-#         print(f'Your fee after discount : ₹{Monthly_base_fee}')
-#     else:
-#         print(f'Your fee after discount : ₹{Yearly_base_fee}')
+if age >= 60:
+    final_discount += discount_fee
+    if showDic[plan] == 'monthly':
+        Monthly_fee_after_discount = Monthly_base_fee - (Monthly_base_fee * final_discount)
+        print(f'Your fee after discount : ₹{Monthly_fee_after_discount}')
+    else:
+        Yearly_fee_after_discount = Yearly_base_fee - (Yearly_base_fee * final_discount)
+        print(f'Your fee after discount : ₹{Yearly_fee_after_discount}')
+else:
+    if showDic[plan] == 'monthly':
+        print(f'Your fee after discount : ₹{Monthly_base_fee}')
+    else:
+        print(f'Your fee after discount : ₹{Yearly_base_fee}')
     
     
 
@@ -229,24 +229,24 @@ Print final bill.'''
 
 
 
-units = int(input("Enter your bill units: "))
+# units = int(input("Enter your bill units: "))
 
-bill = 0
+# bill = 0
 
-# Step 1: Slab calculation
-if units <= 100:
-    bill = units * 3
-else:
-    bill = (100 * 3) + ((units - 100) * 5)
+# # Step 1: Slab calculation
+# if units <= 100:
+#     bill = units * 3
+# else:
+#     bill = (100 * 3) + ((units - 100) * 5)
 
 
-# Step 2: Apply discount if bill > 1000
-if bill > 1000:
-    discount = bill * 0.10
-    bill = bill - discount
+# # Step 2: Apply discount if bill > 1000
+# if bill > 1000:
+#     discount = bill * 0.10
+#     bill = bill - discount
 
 # Step 3: Print result
-print(f"Your final electricity bill is: ₹{bill}")
+# print(f"Your final electricity bill is: ₹{bill}")
 
 
 
